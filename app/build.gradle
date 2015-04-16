@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.flightapp.myapp"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.android.support:appcompat-v7:21.0.+"
+    compile 'com.github.gabrielemariotti.cards:cardslib-core:2.0.1'
+    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.0.1'
+    compile 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.0.1'
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.0.1'
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.0.1'
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
+    compile 'com.edmodo:rangebar:1.0.0'
+    compile 'com.path:android-priority-jobqueue:1.1.2'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'org.roboguice:roboguice:3.+'
+    provided 'org.roboguice:roboblender:3.+'
+    compile 'com.afollestad:material-dialogs:0.6.6.1'
+    compile 'com.android.support:recyclerview-v7:+'
+
+
+}

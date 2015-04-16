@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="AppBarColor">#ffd91a20</color>
+    <color name="ColorPrimaryDark">#E64A19</color>
+    <color name="SlidingTabBackground">#FFFFFF</color>
+    <color name="TabScrollBar">#DA191D</color>
+    <color name="SlidingTabFont">#000000</color>
+    <color name="layout">#18262626</color>
+    <color name="toggle2">#32010101</color>
+    <color name="toggle1">#a0010101</color>
+    <color name="textcolor">#ff010101</color>
+    <color name="other_fields">#FFFFFF</color>
+    <color name="departure_return">#D9191E</color>
+    <color name="minimum_fare">#D9191E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="trave_class_background">#18262626</color>
+</resources>

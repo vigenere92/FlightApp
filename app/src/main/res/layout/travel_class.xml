@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/AppBarColor">
+
+        <TableRow
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/economy_class"
+                android:text="@string/economy_class"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                android:textColor="@color/textcolor"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="1sp"
+            android:layout_marginBottom="1sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/business_class"
+                android:text="@string/business_class"
+                android:layout_gravity="center"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                android:textColor="@color/textcolor"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/first_class"
+                android:text="@string/first_class"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                android:textColor="@color/textcolor"/>
+
+        </TableRow>
+
+</LinearLayout>

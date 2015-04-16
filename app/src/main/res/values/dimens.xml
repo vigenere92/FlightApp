@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="city_code_font">50dp</dimen>
+    <dimen name="departure_return_font">15dp</dimen>
+    <dimen name="day_font">25dp</dimen>
+    <dimen name="month_font">20dp</dimen>
+    <dimen name="date_font">55dp</dimen>
+    <dimen name="minimum_fare_font">20dp</dimen>
+    <dimen name="currency_font">25dp</dimen>
+    <dimen name="flight_amount">20dp</dimen>
+    <dimen name="flight_amount_width">30dp</dimen>
+    <dimen name="airport_city_font">15dp</dimen>
+    <dimen name="stops">20dp</dimen>
+    <dimen name="flightrow_city_font">25dp</dimen>
+    <dimen name="flightrow_datefont">20dp</dimen>
+    <dimen name="flightrow_duration">17dp</dimen>
+</resources>

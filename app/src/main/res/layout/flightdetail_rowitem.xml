@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:paddingTop="10sp"
+    android:paddingBottom="20sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JetAirways"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flight_amount"
+        android:id="@+id/flightrow_airline"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15sp"
+        android:layout_below="@+id/flightrow_airline"
+        android:id="@+id/view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEL"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_city_font"
+        android:layout_below="@+id/view"
+        android:id="@+id/flightrow_departurecitycode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:30"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_city_font"
+        android:layout_toRightOf="@+id/flightrow_departurecitycode"
+        android:layout_alignBottom="@+id/flightrow_departurecitycode"
+        android:id="@+id/flightrow_departuretime"
+        android:layout_marginLeft="7sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28 March, 2015"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_datefont"
+        android:layout_below="@+id/flightrow_departurecitycode"
+        android:id="@+id/flightrow_departuredate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01h 10m"
+        android:textColor="@color/textcolor"
+        android:id="@+id/flightrow_duration"
+        android:layout_alignBottom="@+id/flightrow_departuredate"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/flightrow_duration"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8:30"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_city_font"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/flightrow_departurecitycode"
+        android:id="@+id/flightrow_arrivaltime"
+        android:layout_marginLeft="7sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLR"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_city_font"
+        android:layout_toLeftOf="@+id/flightrow_arrivaltime"
+        android:layout_alignBottom="@+id/flightrow_arrivaltime"
+        android:id="@+id/flightrow_arrivalcitycode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28 March, 2015"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_datefont"
+        android:layout_below="@+id/flightrow_arrivalcitycode"
+        android:layout_alignParentRight="true"
+        android:id="@+id/flightrow_arrivaldate"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Stops"
+        android:id="@+id/flightrow_stops"
+        android:layout_below="@+id/flightrow_departuredate"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_datefont"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/flightrow_datefont"
+        android:text=""
+        android:layout_toRightOf="@id/flightrow_stops"
+        android:layout_alignBottom="@id/flightrow_stops"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/flightrow_seatsleft"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check out coupons"
+        android:id="@+id/coupon_button"
+        android:layout_below="@+id/flightrow_stops"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

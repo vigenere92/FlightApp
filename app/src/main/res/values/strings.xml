@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cities_and_airport">CitiesAndAirport</string>
+    <string name="economy_class">ECONOMY</string>
+    <string name="business_class">BUSINESS</string>
+    <string name="first_class">FIRST CLASS</string>
+    <string name="min_label">0 Hr</string>
+    <string name="max_label">24 Hr</string>
+    <string name="title_activity_all_coupons">AllCoupons</string>
+
+</resources>

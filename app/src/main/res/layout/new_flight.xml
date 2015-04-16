@@ -1,0 +1,473 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/layout"
+        android:orientation="vertical"
+        android:id="@+id/table1">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <RelativeLayout
+                android:id="@+id/depature_city_layout"
+                android:orientation="vertical"
+                android:background="@color/other_fields"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp">
+
+                <TextView
+                    android:id="@+id/departure_city_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:text="DEL"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/city_code_font"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/departure_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Delhi"
+                    android:textColor="@color/textcolor"
+                    android:layout_below="@+id/departure_city_code"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/arrival_city_layout"
+                android:orientation="vertical"
+                android:background="@color/other_fields"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp">
+
+                <TextView
+                    android:id="@+id/arrival_city_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="BLR"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/city_code_font"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/arrival_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Bangalore"
+                    android:textColor="@color/textcolor"
+                    android:layout_below="@+id/arrival_city_code"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="12dp"/>
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <RelativeLayout
+                android:id="@+id/from_date_layout"
+                android:orientation="vertical"
+                android:background="@color/other_fields"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="0sp"
+                    android:id="@+id/from_year"/>
+
+                <TextView
+                    android:id="@+id/col3_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="FROM"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/departure_return"
+                    android:textSize="@dimen/departure_return_font"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/from_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="WED"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/day_font"
+                    android:layout_below="@+id/col3_1_1"
+                    android:layout_alignLeft="@+id/col3_1_1"
+                    android:layout_alignStart="@+id/col3_1_1" />
+
+                <TextView
+                    android:id="@+id/from_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APR"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/month_font"
+                    android:layout_below="@+id/from_day"
+                    android:layout_alignLeft="@+id/from_day"
+                    android:layout_alignStart="@+id/from_day" />
+
+                <TextView
+                    android:id="@+id/from_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/date_font"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/from_day"
+                    android:layout_toEndOf="@+id/from_day"
+                    android:layout_marginLeft="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/to_date_layout"
+                android:orientation="vertical"
+                android:background="@color/other_fields"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_marginLeft="1dp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="0sp"
+                    android:id="@+id/to_year"/>
+
+                <TextView
+                    android:id="@+id/col3_2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="TO"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/departure_return"
+                    android:textSize="@dimen/departure_return_font" />
+
+                <TextView
+                    android:id="@+id/to_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="WED"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/day_font"
+                    android:layout_alignRight="@+id/col3_2_1"
+                    android:layout_below="@+id/col3_2_1"/>
+
+                <TextView
+                    android:id="@+id/to_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APR"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/month_font"
+                    android:layout_below="@+id/to_day"
+                    android:layout_alignRight="@+id/to_day" />
+
+                <TextView
+                    android:id="@+id/to_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/date_font"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/to_day"
+                    android:layout_toStartOf="@+id/to_day"/>
+
+            </RelativeLayout>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp">
+
+            <RelativeLayout
+                android:id="@+id/col4_1"
+                android:orientation="vertical"
+                android:background="@color/other_fields"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/col4_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Minimum Fare"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/minimum_fare"
+                    android:textSize="@dimen/minimum_fare_font"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/col4_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Rs "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/minimum_fare_font"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/col4_1_1"
+                    android:layout_toEndOf="@+id/col4_1_1"
+                    android:layout_marginLeft="15sp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/min_fare_amount"
+                    android:background="@drawable/newflighttab_background_white"
+                    android:text="0"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/flight_amount"
+                    android:minWidth="@dimen/flight_amount_width"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignTop="@+id/col4_1_2"
+                    android:layout_toRightOf="@+id/col4_1_2"
+                    android:layout_toEndOf="@+id/col4_1_2" />
+
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stops"
+                    android:text = "Stops"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="@dimen/stops"
+                    android:textColor="@color/minimum_fare"
+                    android:layout_marginLeft="10dp"/>
+
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/stops"
+                    android:layout_marginLeft="20sp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/zero_stop"
+                    android:checked="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/stops"
+                    android:layout_alignTop="@+id/stops"
+                    android:layout_toRightOf="@id/zero_stop"
+                    android:id="@+id/stop0"/>
+
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/stop0"
+                    android:layout_marginLeft="20sp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/one_stop"
+                    android:checked="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/stops"
+                    android:layout_alignTop="@+id/stops"
+                    android:layout_toRightOf="@id/one_stop"
+                    android:id="@+id/stop1"/>
+
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/stop1"
+                    android:layout_marginLeft="20sp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/two_plus_stop"
+                    android:checked="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2+"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/stops"
+                    android:layout_alignTop="@+id/stops"
+                    android:layout_toRightOf="@id/two_plus_stop"
+                    />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp">
+
+        <RelativeLayout
+            android:id="@+id/departure_time"
+            android:orientation="vertical"
+            android:background="@color/other_fields"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/departure"
+                android:text = "Flight Departure Time"
+                android:textSize="@dimen/stops"
+                android:textColor="@color/minimum_fare"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout android:id="@+id/seekbar_placeholder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4sp"
+                android:layout_marginRight="4sp"
+                android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/travel_class_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/travel_class"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ECONOMY"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/other_fields"
+                android:textColor="@color/textcolor"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_marginTop="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Set Flight"
+                    android:id="@+id/new_flight_button"
+                    android:background="@drawable/newflighttab_background"
+                    android:textColor="@color/white"
+                    android:layout_column="8"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10sp"/>
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dates: "
+        android:id="@+id/dates"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="5sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from_date_flight"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/AppBarColor"
+        android:text="13 Oct 2015"
+        android:layout_marginLeft="4sp"
+        android:layout_toRightOf="@id/dates"
+        android:layout_alignTop="@id/dates"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/textcolor"
+        android:text="-"
+        android:layout_marginLeft="3sp"
+        android:layout_toRightOf="@id/from_date_flight"
+        android:id="@+id/dash"
+        android:layout_alignTop="@id/dates"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_date_flight"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/AppBarColor"
+        android:text="13 Oct 2015"
+        android:layout_marginLeft="4sp"
+        android:layout_toRightOf="@id/dash"
+        android:layout_alignTop="@id/dates"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum Price Set:"
+        android:id="@+id/minimum_price_set"
+        android:layout_below="@id/dates"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="5sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/AppBarColor"
+        android:id="@+id/minimum_price"
+        android:layout_toRightOf="@id/minimum_price_set"
+        android:layout_alignBottom="@id/minimum_price_set"
+        android:layout_marginLeft="5sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Lowest Price:"
+        android:id="@+id/current_lowest_price"
+        android:layout_below="@id/minimum_price_set"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/minimum_fare_font"
+        android:textColor="@color/AppBarColor"
+        android:id="@+id/current_price"
+        android:layout_toRightOf="@id/current_lowest_price"
+        android:layout_alignBottom="@id/current_lowest_price"
+        android:layout_marginLeft="5sp"/>
+
+
+</RelativeLayout>
